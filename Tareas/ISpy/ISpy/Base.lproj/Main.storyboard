@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ISpy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFg-xw-q8M">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coraje" translatesAutoresizingMaskIntoConstraints="NO" id="oWf-yZ-GKA">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="oWf-yZ-GKA" secondAttribute="bottom" id="Dm8-CU-xC5"/>
+                                    <constraint firstItem="oWf-yZ-GKA" firstAttribute="top" secondItem="lFg-xw-q8M" secondAttribute="top" id="IkQ-AJ-xxf"/>
+                                    <constraint firstItem="oWf-yZ-GKA" firstAttribute="centerX" secondItem="lFg-xw-q8M" secondAttribute="centerX" id="PCe-TA-nxr"/>
+                                    <constraint firstItem="oWf-yZ-GKA" firstAttribute="centerY" secondItem="lFg-xw-q8M" secondAttribute="centerY" id="cr3-Yf-Q8U"/>
+                                    <constraint firstItem="oWf-yZ-GKA" firstAttribute="leading" secondItem="lFg-xw-q8M" secondAttribute="leading" id="eqQ-EG-DaI"/>
+                                    <constraint firstAttribute="trailing" secondItem="oWf-yZ-GKA" secondAttribute="trailing" id="fWw-MU-6Ba"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lFg-xw-q8M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dgm-8p-usg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lFg-xw-q8M" secondAttribute="bottom" id="iwq-oC-zgu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lFg-xw-q8M" secondAttribute="trailing" id="r6U-ps-CrA"/>
+                            <constraint firstItem="lFg-xw-q8M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wU1-t4-qKt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="oWf-yZ-GKA" id="s8N-Fz-OAG"/>
+                        <outlet property="scrollView" destination="lFg-xw-q8M" id="eOF-82-eJq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Coraje" width="480" height="854"/>
+    </resources>
+</document>
