@@ -14,12 +14,15 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var imagen: UIImageView!
     
     var fromFirstView: String = ""
+    var imageName: String = ""
+    
+   
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         etiqueta.text = fromFirstView
-        imagen.image = UIImage()
+        imagen.image = UIImage(url)
         // Do any additional setup after loading the view.
     }
 

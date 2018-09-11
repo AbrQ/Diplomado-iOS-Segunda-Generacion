@@ -76,9 +76,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if segue.identifier == "toSecond"{
             let indexPath = tablita.indexPathForSelectedRow
             let destination = segue.destination as! SecondViewController
-            
+            //let urlImage = URL(string: tracks[indexPath.row].artworkUrl100)
             destination.fromFirstView = tracks[(indexPath?.row)!].trackName
-            //destination.fromFirstView = tracks[(indexPath?.row)!].artworkUrl100
+            destination.imageName = tracks[(indexPath?.row)!].artworkUrl100
         }
     }
     
