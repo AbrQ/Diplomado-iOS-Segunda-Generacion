@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let customView = view as! HomeView
+       let customView = view as! HomeView
         customView.setFunnyColor()
         if User.hasSession {
             performSegue(withIdentifier: "showMusicController", sender: self)

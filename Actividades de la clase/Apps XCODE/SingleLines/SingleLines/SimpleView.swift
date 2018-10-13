@@ -1,26 +1,22 @@
 //
-//  HomeView.swift
-//  DiplomadoUnam
+//  SimpleView.swift
+//  SingleLines
 //
-//  Created by Abraham Quezada on 10/12/18.
+//  Created by Abraham Quezada on 10/13/18.
 //  Copyright © 2018 Abraham Quezada. All rights reserved.
 //
 
 import UIKit
 
-class HomeView: UIView {
-    
-    func setFunnyColor(){
-        
-        backgroundColor = UIColor.red
-    }
+class SimpleView: UIView {
 
-    /*
+    
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
         // Drawing code
+       
     }
-    */
+    
 
 }

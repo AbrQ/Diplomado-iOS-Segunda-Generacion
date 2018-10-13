@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  DiplomadoUnam
+//  SingleLines
 //
-//  Created by Abraham Quezada on 10/12/18.
+//  Created by Abraham Quezada on 10/13/18.
 //  Copyright © 2018 Abraham Quezada. All rights reserved.
 //
 
@@ -16,13 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        //let rootViewController = HomeViewController()
-        //window = UIWindow(frame: UIScreen.main.bounds)
-        //window?.rootViewController = rootViewController
-        /*let testView = UIView(frame: UIScreen.main.bounds)
-        testView.backgroundColor = UIColor.blue
-        window?.addSubview(testView)*/
-        //window?.makeKeyAndVisible()
         return true
     }
 

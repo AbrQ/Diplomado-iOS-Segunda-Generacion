@@ -9,7 +9,7 @@
 import UIKit
 
 class User: NSObject {
-    static let hasSession = true
+    static let hasSession = false
     
     static func login() -> Bool{
         return true
