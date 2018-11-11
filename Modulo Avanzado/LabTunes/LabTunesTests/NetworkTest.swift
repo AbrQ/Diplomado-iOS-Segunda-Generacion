@@ -61,6 +61,7 @@ class NetworkTest: XCTestCase{
         Music.fetchSongs{ (songs) in
             resultSongs = songs
             promise.fulfill()
+            //print(resultSongs)
         }
         waitForExpectations(timeout: 5, handler: nil)
         XCTAssertNotEqual(resultSongs.count, 0)

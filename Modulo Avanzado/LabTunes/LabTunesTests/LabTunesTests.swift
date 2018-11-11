@@ -22,7 +22,7 @@ class LabTunesTests: XCTestCase {
     }
     
     func testCorrectLogin(){
-        XCTAssertTrue(User.login(userName: "iOSLab", password: "Hi"))
+        XCTAssertTrue(User.login(userName: "iOSLab", password: "Hola"))
     }
     
     func testWrongLogin(){

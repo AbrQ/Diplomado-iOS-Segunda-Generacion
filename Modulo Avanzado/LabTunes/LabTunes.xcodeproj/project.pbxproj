@@ -19,6 +19,7 @@
 		578F65B12196584400765825 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F65B02196584400765825 /* Music.swift */; };
 		578F65B32196585900765825 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F65B22196585900765825 /* Song.swift */; };
 		578F65B521966BA000765825 /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F65B421966BA000765825 /* NetworkTest.swift */; };
+		57E544A12197306400AB5D2F /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E544A02197306400AB5D2F /* MusicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		578F65B02196584400765825 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		578F65B22196585900765825 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		578F65B421966BA000765825 /* NetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
+		57E544A02197306400AB5D2F /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		578F657C2196577700765825 /* LabTunes */ = {
 			isa = PBXGroup;
 			children = (
+				57E5449F21972FF100AB5D2F /* Controllers */,
 				578F65AB2196580100765825 /* Models */,
 				578F657D2196577700765825 /* AppDelegate.swift */,
 				578F657F2196577700765825 /* ViewController.swift */,
@@ -146,6 +149,14 @@
 				578F65B22196585900765825 /* Song.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		57E5449F21972FF100AB5D2F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				57E544A02197306400AB5D2F /* MusicViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				578F65B32196585900765825 /* Song.swift in Sources */,
+				57E544A12197306400AB5D2F /* MusicViewController.swift in Sources */,
 				578F65AF2196583200765825 /* Session.swift in Sources */,
 				578F65802196577700765825 /* ViewController.swift in Sources */,
 				578F65B12196584400765825 /* Music.swift in Sources */,

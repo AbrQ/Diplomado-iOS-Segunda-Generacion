@@ -25,10 +25,26 @@ class LabTunesUITests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testAppLogin(){
+    let app = XCUIApplication()
+        let nameTextField = app.textFields["usernametextfield"]
+        nameTextField.tap()
+        nameTextField.typeText("iOSLab")
+        
+        let passwordTextField = app.secureTextFields["passwordtextfield"]
+        passwordTextField.tap()
+        passwordTextField.typeText("verySecurePassword")
+        
+        let loginButton = app.buttons["loginbutton"]
+        loginButton.tap()
+        XCTAssertTrue(app.isDisplayMusic)
     }
 
+}
+
+extension XCUIApplication{
+    var isDisplayMusic: Bool{
+        return otherElements["MusicView"].exists
+    }
 }
