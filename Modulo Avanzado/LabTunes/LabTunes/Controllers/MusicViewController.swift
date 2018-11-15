@@ -68,7 +68,7 @@ extension MusicViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MusicCell", for: indexPath)
-        cell.textLabel?.text = songs[indexPath.row].artist
+        cell.textLabel?.text = songs[indexPath.row].name
         return cell
     }
 }
